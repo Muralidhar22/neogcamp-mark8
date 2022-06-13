@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+
+body {
+  background-color: royalblue;
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+.App {
+  font-family: "Square Peg", cursive;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+.input {
+  font-family: inherit;
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 600px;
+}
+
+.emojisContainer {
+  overflow: hidden;
+  display: flex;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-500px, 0, 0); /* The image width */
+  }
+}
+.emoji {
+  animation: slide 15s linear infinite;
+}
